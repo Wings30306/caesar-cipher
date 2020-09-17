@@ -49,7 +49,7 @@ namespace CaesarCipher
                 Console.WriteLine("Ready to ENCRYPT");
                 Console.WriteLine("What's your message?");
                 string message = Console.ReadLine();
-                Console.WriteLine("Choose your cypher (int) to encrypt:");
+                Console.WriteLine("Choose your cypher (0 - 25) to encrypt:");
                 int cypher = Int32.Parse(Console.ReadLine());
             
                 Encrypt(message, cypher);
@@ -59,7 +59,7 @@ namespace CaesarCipher
                 Console.WriteLine("Ready to DECRYPT");
                 Console.WriteLine("What's your message?");
                 string message = Console.ReadLine();
-                Console.WriteLine("Choose your cypher (a positive integer) to decrypt:");
+                Console.WriteLine("Choose your cypher (0 - 25) to decrypt:");
                 int cypher = 26 - Int32.Parse(Console.ReadLine());
                 Encrypt(message, cypher);
             
